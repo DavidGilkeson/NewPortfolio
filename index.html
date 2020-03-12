@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>David's Portfolio</title>
+    <link rel="icon" href="img/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+
+    <!-- Google fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#home"></a> <img src="img/logo.png" alt="David logo" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="education.html" class="nav__link">Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="education-cv.html" class="nav__link">CV</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>David Gilkeson</strong>
+      </h1>
+
+      <p class="section__subtitle section__subtitle--intro">
+        Software Developer
+      </p>
+
+      <img src="img/profile12.jpg" alt="Picture of David" class="intro__img" />
+    </section>
+
+    <!-- Services -->
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Front end Web Development</h3>
+          <p>
+            Create and design modern websites using HTML5, CSS, Bootstrap, React
+            and Javascript.
+          </p>
+        </div>
+
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Back end Web Development</h3>
+          <p>
+            Create web applications on the server side using Node.js, express,
+            MongoDB, SQL and Firebase. Also, pulling data from various API's to
+            make better and more interactive web applications.
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <h3>Mobile Applications</h3>
+          <p>
+            Create android apps with Android Studio while using Java.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My work</a>
+    </section>
+
+    <!-- About me -->
+
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who am I</h2>
+      <p class="section__subtitle section__subtitle--about"></p>
+
+      <div class="about-me__body">
+        <p>
+          First and foremost I try to be the best version of myself. Whatever I
+          do, I give it my best. Whether it be programming, baking or playing
+          sports. I will always give it 100 per cent! I'm an all in sort of
+          person.
+        </p>
+        <p>
+          I like to read, watch documentaries and go to the gym. If I had to
+          describe myself in 3 words. I'd say honest, trustworthy and hard
+          working.
+        </p>
+
+        <p class="quote">
+          " Rome wasn't built in a day, but they were laying bricks every hour.
+          You don't have to build everything you want today, just lay a brick "
+          - <strong>James Clear</strong>
+        </p>
+      </div>
+
+      <img src="img/profile2.jpg" alt="David image" class="about-me__img" />
+    </section>
+
+    <!-- My work -->
+
+    <!-- Frontend Projects -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle">Frontend projects</p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://davidgilkeson.github.io/Simon-Game/"
+          class="portfolio__item"
+        >
+          <img
+            src="img/simon-game1.jpg"
+            alt="Simon Game"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://davidgilkeson.github.io/Landing-Page/"
+          class="portfolio__item"
+        >
+          <img
+            src="img/landing-page.jpg"
+            alt="landing-page"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a
+          href="https://davidgilkeson.github.io/Drum-Kit/"
+          class="portfolio__item"
+        >
+          <img src="img/drum.jpg" alt="drum" class="portfolio__img" />
+        </a>
+      </div>
+
+      <!-- Backend Projects -->
+
+      <h2 class="section__title"></h2>
+
+      <p class="section__subtitle">Backend projects</p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://enigmatic-island-85825.herokuapp.com/"
+          class="portfolio__item"
+        >
+          <img
+            src="img/newsletter.jpg"
+            alt="newsletter"
+            class="portfolio__img"
+          />
+        </a>
+      </div>
+
+      <!-- Group Projects -->
+
+      <p class="section__subtitle">Group projects</p>
+
+      <div class="portfolio">
+        <div class="screenwrapper">
+          <iframe
+            src="https://www.youtube.com/embed/BxYdN5iR5Sw"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Android Applications -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="mailto:davidgilkeson7@gmail.com"
+            ><i class="far fa-envelope fa-2x" style="color:#fff;"></i
+          ></a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/dgilkeson/"
+            ><i class="fab fa-linkedin fa-2x" style="color:#0e76a8;"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/DavidGilkeson"
+            ><i class="fab fa-github fa-2x" style="color:#333;"></i
+          ></a>
+        </li>
+
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.freecodecamp.org/davidgilkeson"
+            ><i class="fab fa-free-code-camp fa-2x" style="color:#006400;"> </i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://leetcode.com/dgilky7/">
+            <i class="fas fa-code fa-2x" style="color:rgb(235, 148, 18);"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        &copy; 2020 David Gilkeson
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
