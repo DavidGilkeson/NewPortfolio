@@ -125,14 +125,15 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.quote {
+q {
     font-style: italic;
-
 }
 
 .section__title {
 
-    margin-bottom: .25em;
+    margin-bottom: .75em;
+    transform: (-50%, -50%);
+
 }
 
 .section__title--intro {
@@ -143,6 +144,29 @@ h3 {
 .section__title--intro strong {
 
     display: block;
+    letter-spacing: 6px;
+    animation: text 3s 1;
+    color: var(--clr-dark);
+}
+
+
+
+@keyframes text {
+    0% {
+        color: var(--clr-accent);
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+
 }
 
 .section__subtitle {
@@ -305,12 +329,13 @@ header {
 .intro {
 
     position: relative;
+
+
 }
 
 .intro__img {
 
     box-shadow: var(--bs);
-
 
 }
 
@@ -360,7 +385,7 @@ header {
 
     background-color: var(--clr-dark);
     background-size: cover;
-    background-image: url(../img/apple-bg.jpg);
+    background-image: url(../img/services-bg.jpg);
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
@@ -412,6 +437,149 @@ header {
     width: 100%;
 }
 
+/* Quotes Section */
+
+.quotes {
+
+    background-color: var(--clr-dark);
+    background-size: cover;
+    background-image: url(../img/bg-quotes.jpg);
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--quotes {
+
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--quotes::after {
+
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.section__subtitle--quotes {
+
+    margin-bottom: 0;
+}
+
+.quote__body {
+
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: rgb(182, 182, 182);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    position: absolute;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: var(--clr-dark);
+    color: white;
+}
+
+/* Add a blue color to the author */
+.author {
+    color: var(--clr-accent);
+}
+
+
+/* Skills */
+
+.skills {
+
+    background-color: var(--clr-light);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--skills {
+
+    color: var(--clr-dark);
+    position: relative;
+}
+
+.section__title--skills::after {
+
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-dark);
+    opacity: 0.25;
+}
+
+.skills__image {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 0;
+    padding: 0;
+}
+
+.image__skills {
+
+    width: 6em;
+    height: 6em;
+    margin: auto;
+}
+
+
+
 @media (min-width: 800px) {
 
     .services {
@@ -428,6 +596,13 @@ header {
         margin-left: 2em;
     }
 
+    .image__skills {
+
+        width: 8em;
+        height: 8em;
+        margin: auto;
+    }
+
 }
 
 .about-me {
@@ -442,6 +617,8 @@ header {
     box-shadow: var(--bs);
     border-radius: 50%;
 }
+
+
 
 @media (min-width: 600px) {
 
@@ -461,6 +638,7 @@ header {
 
         grid-area: title;
     }
+
 
     .section__subtitle--about {
 
@@ -484,6 +662,12 @@ header {
     }
 
 }
+
+
+
+
+
+
 
 /* My Work */
 
