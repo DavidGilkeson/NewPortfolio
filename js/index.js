@@ -14,6 +14,7 @@ navLinks.forEach(link => {
 });
 
 
+// Quotes Slider
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -41,5 +42,9 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block";
+    setTimeout("showSlides()", 2000);
 
 }
+
+//setTimeout("showSlides()", 2000);
+window.onload = showSlides;

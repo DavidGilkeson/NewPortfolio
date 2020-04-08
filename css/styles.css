@@ -80,6 +80,39 @@ strong {
     outline-offset: 3px;
 }
 
+/* Education */
+
+.award_img {
+
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+    border-radius: 0%;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+}
+
+.numbers,
+.number {
+
+    text-align: center;
+}
+
+.higher-dip {
+    text-align: center;
+    padding: 1em;
+}
+
+.table {
+
+
+    scroll-behavior: auto;
+}
+
 /* Buttons */
 
 .btn {
@@ -549,6 +582,7 @@ header {
 
     color: var(--clr-dark);
     position: relative;
+
 }
 
 .section__title--skills::after {
@@ -576,8 +610,15 @@ header {
     width: 6em;
     height: 6em;
     margin: auto;
+
 }
 
+.fade {
+
+    transform: translateX(0);
+    opacity: 1.0;
+    transition: all 500ms;
+}
 
 
 @media (min-width: 800px) {
@@ -596,11 +637,14 @@ header {
         margin-left: 2em;
     }
 
+
+
     .image__skills {
 
         width: 8em;
         height: 8em;
         margin: auto;
+
     }
 
 }
