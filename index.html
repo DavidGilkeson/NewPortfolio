@@ -10,6 +10,13 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 
   <!-- Google fonts -->
@@ -142,9 +149,13 @@
     <h3>Great Minds... Great Quotes...</h3>
     <div class="slideshow-container">
       <div class="mySlides">
+        <q id="text"></q>
+        <p id="author" class="author"></p>
+      </div>
+      <div class="mySlides">
         <q>
           Never give up, for that is just the place and time that the tide will turn.</q>
-        <p class="author">Harriet Beecher Stowe</p>
+        <p class="author">Harriet Beecher Stowe </p>
       </div>
       <div class="mySlides">
         <q>
@@ -178,9 +189,6 @@
       </div>
 
 
-      <!-- Next/prev buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
 
@@ -312,7 +320,7 @@
       &copy; 2020 David Gilkeson
     </div>
   </footer>
-
+  <script src="js/quote.js"></script>
   <script src="js/index.js"></script>
 </body>
 
