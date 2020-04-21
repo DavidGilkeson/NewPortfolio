@@ -204,7 +204,7 @@ q {
 
 .section__subtitle {
     margin: 0;
-    padding: .25em 1em;
+    padding: 1em 1em;
     font-size: var(--fs--h3);
 
 }
@@ -523,43 +523,7 @@ header {
     text-align: center;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: rgb(182, 182, 182);
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
 
-/* Position the "previous button" to the left */
-.prev {
-    position: absolute;
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
-
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: var(--clr-dark);
-    color: white;
-}
 
 /* Add a blue color to the author */
 .author {
@@ -659,7 +623,7 @@ header {
 
 
     box-shadow: var(--bs);
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 
@@ -705,7 +669,11 @@ header {
 
     }
 
+
+
 }
+
+
 
 
 
@@ -728,19 +696,25 @@ header {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1em;
+
+
 }
 
 .portfolio__item {
-
-    background: var(--clr-accent);
-    overflow: hidden;
+    border-color: var(--clr-accent);
+    border: medium;
 }
 
 .portfolio__img {
-
-    transition:
-        transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    border-radius: 1em;
+    border-color: var(--clr-accent);
+    border: medium;
 }
+
+
+
+
 
 .portfolio__item:focus {
 
@@ -748,11 +722,44 @@ header {
     z-index: 2;
 }
 
+/*
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
 
     transform: scale(1.2);
     opacity: .5;
+} */
+
+/* Img Button */
+.myButton {
+
+    top: 50%;
+    left: 50%;
+
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: var(--clr-accent);
+    border-radius: 8px;
+
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color: #408c99;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
 }
 
 /* Footer */
