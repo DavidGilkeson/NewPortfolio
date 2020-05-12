@@ -418,8 +418,11 @@ header {
 
     background-color: var(--clr-dark);
     background-size: cover;
-    background-image: url(../img/services-bg.jpg);
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/bg-what.jpg);
     background-blend-mode: multiply;
+
     color: var(--clr-light);
     text-align: center;
 }
@@ -476,7 +479,8 @@ header {
 
     background-color: var(--clr-dark);
     background-size: cover;
-    background-image: url(../img/bg-quotes.jpg);
+    background-image: url(../img/bg-quotes1.jpg);
+    background-attachment: fixed;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
@@ -668,13 +672,19 @@ header {
         z-index: 2;
 
     }
+
+
 }
 
 /* My Work */
 
 .my-work {
 
-    background-color: var(--clr-dark);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img/bg-road.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
 }
@@ -699,6 +709,8 @@ header {
     border-radius: 1em;
     border-color: var(--clr-accent);
     border: medium;
+
+    transition: all 0.5s ease-in;
 }
 
 .portfolio__item:focus {
@@ -714,7 +726,7 @@ header {
 .portfolio__item:focus .portfolio__img {
 
     transform: scale(1.1);
-    opacity: .5;
+    opacity: .7;
 
 
 
