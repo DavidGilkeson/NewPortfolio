@@ -13,7 +13,7 @@ counters.forEach(numbers => {
         if (count < target) {
 
             numbers.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, 8);
+            setTimeout(updateCount, 30);
 
         } else {
 
