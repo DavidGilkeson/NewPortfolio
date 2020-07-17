@@ -225,6 +225,12 @@ q {
     margin-bottom: 2em;
 }
 
+/* Type Writer Cursor */
+.txt-type>.txt {
+    border-right: 0.1rem solid #777;
+}
+
+
 /* Header */
 
 header {
