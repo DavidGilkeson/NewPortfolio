@@ -18,7 +18,7 @@ function getQuote() {
     .then((data) => {
       quoteObject = data; // assign data to quoteObject
       //display quote
-      quote.textContent = `${quoteObject.content}`;
+      quote.innerHTML = quoteObject.content;
       //display author
       author.innerHTML = quoteObject.author;
     });
