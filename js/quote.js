@@ -24,6 +24,4 @@ function getQuote() {
     });
   //change quote when button is clicked
   setTimeout('getQuote()', 5000);
-
-
 }
