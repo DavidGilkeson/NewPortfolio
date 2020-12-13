@@ -12,16 +12,16 @@ window.onload = getQuote;
 
 //function to get and assign quote and author
 function getQuote() {
-  //fetch the data
-  fetch('http://quotable.io/random')
-    .then((res) => res.json()) //response type
-    .then((data) => {
-      quoteObject = data; // assign data to quoteObject
+  // //fetch the data
+  // fetch('http://quotable.io/random')
+  //   .then((res) => res.json()) //response type
+  //   .then((data) => {
+  //     quoteObject = data; // assign data to quoteObject
       //display quote
       quote.innerHTML = quoteObject.content;
       //display author
       author.innerHTML = quoteObject.author;
-    });
+    // });
   //change quote when button is clicked
   setTimeout('getQuote()', 5000);
 }
