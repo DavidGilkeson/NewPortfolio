@@ -14,7 +14,7 @@ window.onload = getQuote;
 //function to get and assign quote and author
 function getQuote() {
     //fetch the data
-    fetch('https://quota.glitch.me/random')
+    fetch('http://quotable.io/random')
         .then(res => res.json()) //response type
         .then(data => {
             quoteObject = data; // assign data to quoteObject
